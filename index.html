@@ -5,23 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Weather app</title>
 </head>
 
 <body>
-
-    <div class="location">
-        <h2 class="location-timzezone">Timezone</h2>
-        <p>Icon</p>
+    <div class="app-wrap">
+        <header type="text" autocomplete="off" class="search-box"
+        placeholder="Search for a city...">
+    </header>
+    <main>
+        <section class="location">
+            <div class="city">Warsaw, PL</div>
+            <div class="data">Wendsday 11 November 2020</div>
+        </section>
+        <div class="current">
+            <div class="temp">10<span>°C</span></div>
+            <div class="weather">Cloudy</div>
+            <div class="hi-low">8°C / 11 °C</div>
+        </div>
+    </main>
     </div>
-    <div class="temperature">
-        <div class="degree-section">
-        <h2 class="temperature-degree">34</h2>
-        <span>F</span>
-    </div>
-        <div class="temperature-description">Its friggin cold</div>
-    </div>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
